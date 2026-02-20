@@ -3,7 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-prices = pd.read_csv("D:\\Altro\\Investimenti DEGIRO\\PORTFOLIO wD\\ptf_chevalier_python\\instrument_prices.csv")
+# prices = pd.read_csv("D:\\Altro\\Investimenti DEGIRO\\PORTFOLIO wD\\ptf_chevalier_python\\instrument_prices.csv")
+url = "https://raw.githubusercontent.com/marcopiemontese0-stack/quantitative_model_1/main/instrument_prices.csv"
+prices = pd.read_csv(url)
 
 prices
 ticker_list = prices.columns.tolist()
